@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+        }
+        main {
+            margin: 20px;
+        }
+        h2 {
+            color: #333;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background-color: #fff;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Trivia Time!</h1>
+    </header>
+    <main>
+        <h2>Question 1:</h2>
+        <p>What is the capital of France?</p>
+        <ul>
+            <li><input type="radio" name="q1" value="paris"> Paris</li>
+            <li><input type="radio" name="q1" value="london"> London</li>
+            <li><input type="radio" name="q1" value="berlin"> Berlin</li>
+            <li><input type="radio" name="q1" value="rome"> Rome</li>
+        </ul>
+
+        <h2>Question 2:</h2>
+        <p>Which planet is known as the Red Planet?</p>
+        <ul>
+            <li><input type="radio" name="q2" value="earth"> Earth</li>
+            <li><input type="radio" name="q2" value="mars"> Mars</li>
+            <li><input type="radio" name="q2" value="venus"> Venus</li>
+            <li><input type="radio" name="q2" value="jupiter"> Jupiter</li>
+        </ul>
+
+        <!-- Add more questions as needed -->
+
+        <button onclick="submitAnswers()">Submit Answers</button>
+    </main>
+
+    <script>
+        function submitAnswers() {
+            // You can add JavaScript code to handle the form submission and check the answers
+            // For simplicity, let's just show an alert for now
+            alert('Answers submitted! Check your score.');
+        }
+    </script>
+</body>
+</html>
